@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>List Payment - DANA, GoPay, QRIS</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="theme-toggle" onclick="toggleTheme()">🌓 Mode</div>
+
+  <header>
+    <h1>List Payment Mang Yaanz Official🕊</h1>
+  </header>
+
+  <div class="container">
+    <div class="success" id="successMsg">✅ Disalin ke clipboard!</div>
+
+    <div class="list" id="paymentList">
+      <!-- DANA -->
+      <div class="card fade-in">
+        <h3>DANA - 085780614462</h3>
+        <p>A/N: Rohxxxxh</p>
+        <p>Note: Wajib Kirim Bukti Trx📍</p>
+        <button class="copy-btn" onclick="copyText('085780614462')">Salin Nomor DANA</button>
+      </div>
+
+      <!-- GoPay -->
+      <div class="card fade-in">
+        <h3>GoPay - 085713826346</h3>
+        <p>A/N: Mang Yaanz</p>
+        <p>Note: Wajib Kirim Bukti Trx📍</p>
+        <button class="copy-btn" onclick="copyText('085713826346')">Salin Nomor GoPay</button>
+      </div>
+
+      <!-- QRIS -->
+      <div class="card fade-in">
+        <h3>QRIS</h3>
+        <p>A/N: Mang Yaanz Store</p>
+        <p>Note: Wajib kirim bukti Trx📍</p>
+        <img src="https://files.catbox.moe/nb7jaq.jpeg" alt="QRIS Payment" class="qris-img">
+        <button class="copy-btn" onclick="copyText('https://files.catbox.moe/nb7jaq.jpeg')">Salin Link QRIS</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 🎵 Musik Otomatis -->
+  <audio id="bgMusic" loop>
+    <source src="https://files.catbox.moe/b2t58h.mp3" type="audio/mp3">
+    Browser Anda tidak mendukung audio.
+  </audio>
+  <div class="music-control" onclick="toggleMusic()">
+    🔊
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
